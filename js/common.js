@@ -17,6 +17,11 @@ $(function(){
 		$("#boxLNB").removeClass("on");
 	});
 
+	var mainProduct = new Swiper('.boxProduct .swiper-container', {
+		slidesPerView: 'auto',
+		spaceBetween: 5
+	});
+
 	var mainBrand = new Swiper('.boxMainBrand .swiper-container', {
 		slidesPerView: 'auto',
 		spaceBetween: 20,
@@ -24,6 +29,15 @@ $(function(){
 		navigation: {
 			nextEl: '.boxMainBrand .swiper-button-next',
 			prevEl: '.boxMainBrand .swiper-button-prev',
+		},
+	});
+
+	var listItem = new Swiper('.itemListTop .swiper-container', {
+		slidesPerView: "auto",
+		spaceBetween: 20,
+		navigation: {
+			nextEl: '.itemListTop .swiper-button-next',
+			prevEl: '.itemListTop .swiper-button-prev',
 		},
 	});
 
